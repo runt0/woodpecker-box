@@ -5,6 +5,7 @@ import plugins.detector.landray.LandrayOAInfoDetectorPlugin;
 import plugins.helper.dahua.DahuaPasswordDecryptPlugin;
 import plugins.helper.finereport.FineReportDecoderPlugin;
 import plugins.helper.kingdee.KingdeeDecoderPlugin;
+import plugins.helper.misc.GodzillaFlowHelperPlugin;
 import plugins.helper.spring.SpringBeanPlugin;
 import plugins.helper.trick.TrickyJSPGeneratorPlugin;
 import plugins.vul.activemq.Activemq_OpenWire_Deserialization_Plugin;
@@ -41,5 +42,6 @@ public class WoodpeckerPluginManager implements IPluginManager {
         iPluginManagerCallbacks.registerHelperPlugin(new FineReportDecoderPlugin());
         iPluginManagerCallbacks.registerHelperPlugin(new DahuaPasswordDecryptPlugin());
         iPluginManagerCallbacks.registerHelperPlugin(new SpringBeanPlugin());
+        iPluginManagerCallbacks.registerHelperPlugin(new GodzillaFlowHelperPlugin());
     }
 }
